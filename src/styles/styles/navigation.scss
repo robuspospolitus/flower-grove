@@ -1,0 +1,30 @@
+@use '../modules/variables';
+
+.navigation-bar {
+    height: 48px;
+    display: flex;
+    background-color: black;
+    color: white;
+    font-family: regularFont;
+    letter-spacing: 2px;
+    .navigation-link {
+        text-decoration: none;
+        font-size: 24px;
+        text-align: center;
+        width: 100%;
+        line-height: 48px;
+    }
+    .navigation-link:link, .navigation-link:visited {
+        text-decoration: none;
+        color: white;
+    }
+    .navigation-link:hover {
+        background-color: variables.$primary-color-a;
+    }
+    .separator{
+        width: 1px;
+        height: 24px;
+        background-color: white;
+        margin-top: 12px;
+    }
+}

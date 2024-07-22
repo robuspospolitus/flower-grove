@@ -1,0 +1,10 @@
+@use '../modules/variables';
+
+.quote-wrapper {
+    background-color: variables.$primary-color-d;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 16px;
+}

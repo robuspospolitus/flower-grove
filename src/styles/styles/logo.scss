@@ -1,0 +1,39 @@
+@use '../modules/variables';
+
+.logo-wrapper {
+    height: 64px;
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 100%;
+  
+    
+    /*Horizontal*/
+    background-image: linear-gradient(to right, rgb(255, 255, 255) 2%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 50px 1px;
+    background-repeat: repeat-x;
+
+    .logo-text{
+        text-align: center;
+        font-size: 48px;
+        letter-spacing: 4px;
+        font-family: fancyFont;
+        line-height: 64px;
+        width: 100%;
+      }
+
+    .socials {
+        display: flex;
+        position: absolute;
+        right: 24px;
+
+        .social {
+            height: 48px;
+            width: 48px;
+            background-color: variables.$primary-color-c;
+            margin: 8px;
+            border-radius: 50%;
+           }
+      }
+  }
