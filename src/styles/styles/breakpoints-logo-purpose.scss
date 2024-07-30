@@ -1,0 +1,107 @@
+@media only screen and (max-width: 870px) {
+    .social {
+        display: none;
+    }
+}
+@media only screen and (max-width: 745px) {
+    h2{
+        margin-left: 281px;
+    }
+    .purpose-pic-and-text{
+        .purpose-text {
+            margin-right: 50px;
+            margin-left: 281px;
+        }
+        
+    }
+}
+@media only screen and (max-width: 727px) {
+    .purpose-separator-left {
+        top: 360px;
+        left: 260px;
+    }
+    .purpose-separator-right {
+        top: 155px;
+        right: 40px;
+    }
+}
+
+@media only screen and (min-width: 727px){
+    .purpose-separator-left {
+        top: 300px;
+        left: 260px;
+    }
+    .purpose-separator-right {
+        top: 130px;
+        right: 40px;
+    }
+}
+
+@media only screen and (min-width: 745px) {
+    h2{
+        margin-left: 299px;
+    }
+    .purpose-pic-and-text{
+        
+        .purpose-text {
+            margin-right: 50px;
+            margin-top: 48px;
+            margin-left: 299px;
+
+        }
+        .purpose-separator-left {
+            top: 300px;
+            left: 281px;
+        }
+        .purpose-separator-right {
+            top: 175px;
+            right: 40px;
+        }
+    }
+}
+@media only screen and (min-width: 950px) {
+    h2{
+        margin-left: calc(281px + 48px + 5%);
+    }
+    .purpose-pic-and-text{
+        
+        .purpose-text {
+            margin-right: 10%;
+            padding: 48px;
+            padding-top: 24px;
+            margin-left: calc(281px + 5%);
+
+        }
+        .purpose-separator-left {
+            top: 300px;
+            left: 350px;
+        }
+        .purpose-separator-right {
+            top: 200px;
+            right: 120px;
+        }
+
+    }
+}
+@media only screen and (min-width: 1602px) {
+    .purpose-pic-and-text{
+        .purpose-separator-left {
+            top: 250px;
+            left: 350px;
+        }
+        .purpose-separator-right {
+            top: 160px;
+            right: 120px;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .purpose-pic-and-text{
+        img {
+            left: -50px;
+        }
+    }
+}
+

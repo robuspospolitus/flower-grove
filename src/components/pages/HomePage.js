@@ -1,6 +1,6 @@
 import Gallery from "../objects/Gallery";
 import Quote from "../objects/Quote";
-import Galleryv2 from "../objects/Galleryv2";
+import PurposeBlock from '../objects/PurposeBlock'
 
 
 export default function HomePage() {
@@ -8,7 +8,8 @@ export default function HomePage() {
     return(
         <>
             <Quote />
-            <Galleryv2/>
+            <Gallery/>
+            <PurposeBlock/>
         </>
     )
 }

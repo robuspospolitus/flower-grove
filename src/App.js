@@ -5,6 +5,7 @@ import PostsPage from "./components/pages/PostsPage";
 import InfoPage from "./components/pages/InfoPage";
 import './App.scss';
 import './styles/styles/logo.scss';
+import './styles/styles/breakpoints-logo-purpose.scss'
 
 function App() {
   return (

@@ -1,3 +1,4 @@
+@use '../modules/variables';
 
 .fadein {
     position: absolute;
@@ -13,6 +14,44 @@
         animation-name: fade;
         animation-iteration-count: infinite;
         animation-duration: 16s;
+        filter: brightness(50%)
+    }
+    .img1 {
+    }
+    .img2 {
+        -webkit-animation-delay: -12s;
+        animation-delay: -12s;
+    }
+    .img3 {
+        -webkit-animation-delay: -8s;
+        animation-delay: -8s;
+    }
+    .img4 {
+        -webkit-animation-delay: -4s;
+        animation-delay: -4s;
+    }
+    .gallery-sign{
+        position: absolute;
+        font-size: 64px;
+        top: 128px;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+        letter-spacing: 2px;
+        font-family: fancyFont;
+        color: white;
+    }
+    .gallery-undersign{
+        position: absolute;
+        font-size: 24px;
+        width: 70vw;
+        font-weight: 400;
+        top: 216px;
+        left: 50vw;
+        letter-spacing: 1px;
+        text-align: center;
+        transform: translate(-50%, 0);
+        color: white;
+
     }
 }
 
@@ -29,19 +68,4 @@
     33% {opacity: 1;}
     53% {opacity: 0;}
     100% {opacity: 0;}
-}
-
-.img1 {
-}
-.img2 {
-    -webkit-animation-delay: -12s;
-    animation-delay: -12s;
-}
-.img3 {
-    -webkit-animation-delay: -8s;
-    animation-delay: -8s;
-}
-.img4 {
-    -webkit-animation-delay: -4s;
-    animation-delay: -4s;
 }

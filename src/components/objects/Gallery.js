@@ -1,25 +1,17 @@
-import { useState, useEffect } from 'react';
 import '../../styles/styles/gallery.scss';
 
-const images = [
-    "https://picsum.photos/200/300/?image=523",
-    "https://picsum.photos/200/300/?image=524",
-    "https://picsum.photos/200/300/?image=525",
-    "https://picsum.photos/200/300/?image=526"
-  ];
-
 export default function Gallery() {
-    const [selectedImage, setSelectedImage] = useState([0, "https://picsum.photos/200/300/?image=523"]);
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setSelectedImage(() => [selectedImage[0] === 3 ? 0 : selectedImage[0]+1, selectedImage[0] === 3 ? images[0] : images[selectedImage[0]+1]]);
-        }, 5000);
-
-        return () => clearInterval(interval);
-    }, [selectedImage])
     return(
         <>
-            <img className='gallery'  src={selectedImage[1]} />
+            <div className='fadein'>
+                <img className='img1 gallery'  src="gallery-images/1.jpg" alt=""/>
+                <img className='img2 gallery'  src="gallery-images/2.jpg" alt=""/>
+                <img className='img3 gallery'  src="gallery-images/3.jpeg" alt=""/>
+                <img className='img4 gallery'  src="gallery-images/4.jpeg" alt=""/>
+                <div className='gallery-sign'>Welcome</div>
+                <div className='gallery-undersign'>There is in each person, in every animal, bird and plant a star which mirrors, matches or is in some sense the same as a star in the heavens.</div>
+            </div>
+            
         </>
     );
 }
