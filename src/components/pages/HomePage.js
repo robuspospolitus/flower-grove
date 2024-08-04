@@ -1,7 +1,7 @@
 import Gallery from "../objects/Gallery";
 import Quote from "../objects/Quote";
 import PurposeBlock from '../objects/PurposeBlock'
-
+import SquareBlock from "../objects/SquareBlock";
 
 export default function HomePage() {
 
@@ -9,7 +9,11 @@ export default function HomePage() {
         <>
             <Quote />
             <Gallery/>
-            <PurposeBlock/>
+            <div style={{position: "relative"}}>
+                <PurposeBlock/>
+                <SquareBlock/>
+            </div>
+            
         </>
     )
 }

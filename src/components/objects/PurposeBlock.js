@@ -1,10 +1,8 @@
 import '../../styles/styles/purposeblock.scss';
 
 
-export default function PurposeBlock() {
-
-    return (
-        <>
+const PurposeBlock = () => (
+    <>
         <div className="purpose-wrapper">
             <h2>What's our purpose?</h2>
             <div className="purpose-pic-and-text">
@@ -22,6 +20,7 @@ export default function PurposeBlock() {
 
             </div>
         </div>
-        </>
-    )
-}
+    </>
+);
+
+export default PurposeBlock;

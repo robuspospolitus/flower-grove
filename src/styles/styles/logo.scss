@@ -1,7 +1,7 @@
 @use '../modules/variables';
 
 .logo-wrapper {
-    height: 64px;
+    min-height: 64px;
     background-color: black;
     color: white;
     display: flex;
@@ -20,6 +20,7 @@
         letter-spacing: 4px;
         font-family: logoFont;
         line-height: 64px;
+        margin: 8px 0 12px 0;
         width: 100%;
       }
 

@@ -1,0 +1,25 @@
+@use "../modules/variables";
+
+.squareblock-wrapper {
+    position: absolute;
+    min-height: 500px;
+    width: 100vw;
+    background-color: white;
+    z-index: 1000;
+
+    .square{
+        background-color: variables.$primary-color-b;
+        font-size: 56px;
+        p {
+            font-family: fancyFont;
+            color: variables.$primary-color-a;
+        }
+    }
+    .outside-square-text {
+        p {
+            font-size: 24px;
+            line-height: 36px;
+            letter-spacing: 1px;
+        }
+    }
+}

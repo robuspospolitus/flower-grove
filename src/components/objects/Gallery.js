@@ -1,7 +1,6 @@
 import '../../styles/styles/gallery.scss';
 
-export default function Gallery() {
-    return(
+const Gallery = () => (
         <>
             <div className='fadein'>
                 <img className='img1 gallery'  src="gallery-images/1.jpg" alt=""/>
@@ -13,5 +12,6 @@ export default function Gallery() {
             </div>
             
         </>
-    );
-}
+);
+
+export default Gallery;

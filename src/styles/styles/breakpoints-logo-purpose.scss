@@ -1,8 +1,22 @@
+/* LOGO */ 
+
 @media only screen and (max-width: 870px) {
     .social {
         display: none;
     }
+
 }
+
+@media only screen and (max-width: 739px) {
+    .purpose-separator {
+        display: none;
+    }
+}
+
+
+
+/* PURPOSE BLOCK */
+
 @media only screen and (max-width: 745px) {
     h2{
         margin-left: 281px;
@@ -45,7 +59,7 @@
         
         .purpose-text {
             margin-right: 50px;
-            margin-top: 48px;
+            margin-top: 0px;
             margin-left: 299px;
 
         }
@@ -54,7 +68,7 @@
             left: 281px;
         }
         .purpose-separator-right {
-            top: 175px;
+            top: 130px;
             right: 40px;
         }
     }
@@ -77,7 +91,7 @@
             left: 350px;
         }
         .purpose-separator-right {
-            top: 200px;
+            top: 140px;
             right: 120px;
         }
 
