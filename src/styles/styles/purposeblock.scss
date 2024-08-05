@@ -3,21 +3,12 @@
 
 .purpose-wrapper {
     position: relative;
-    margin-top: 500px;
-    min-height: 500px;
+    margin-top: 700px;
+    min-height: 550px;
     width: 100vw;
     color: variables.$primary-color-d;
     background-color: variables.$primary-color-a;
 
-    h2 {
-        font-size: 42px;
-        font-family: fancyFont;
-        letter-spacing: 3px;
-        font-weight: 500;
-        padding-top: 48px;
-        margin-right: 13px;
-        
-    }
     .purpose-pic-and-text{
         display: flex;
 

@@ -1,0 +1,7 @@
+@use '../modules/variables';
+
+.newsletter-wrapper {
+    background-color: variables.$primary-color-c;
+    height: 500px;
+    padding: 50px;
+}
