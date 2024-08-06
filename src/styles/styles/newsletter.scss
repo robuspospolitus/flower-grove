@@ -2,6 +2,59 @@
 
 .newsletter-wrapper {
     background-color: variables.$primary-color-c;
-    height: 500px;
+    height: 400px;
     padding: 50px;
+    h2 {
+        margin: auto;
+        text-align: center;
+        font-size: 42px;
+        color: variables.$primary-color-d;
+    }
+    p{
+        margin: 24px;
+        text-align: center;
+        font-size: 24px;
+        color: variables.$primary-color-d;
+    }
+    .button {
+        height: 42px;
+        width: 216px;
+        margin: auto;
+        padding-top: 24px;
+        border-collapse: collapse;
+        button {
+            height: 42px;
+            font-size: 20px;
+            width: 216px;
+        }
+    }
+
+    .newsletter-form {
+        background-color: variables.$primary-color-d;
+        width: 70vw;
+        max-width: 600px;
+        height: 144px;
+        margin: auto;
+        margin-top: 20px;
+        border: 0px;
+        border-radius: 25px;
+        padding-top: 24px;
+        input {
+            width: 70%;
+            height: 24px;
+            border: 1px solid darkgray ;
+            border-radius: 5px;
+            margin: 8px;
+            margin-left: 15%;
+        }
+        button {
+            width: 50%;
+            height: 24px;
+            border: 1px solid darkgray ;
+            border-radius: 5px;
+            margin: 8px;
+            margin-left: 25%;
+
+        }
+    }
 }
