@@ -1,13 +1,17 @@
 import '../../styles/styles/squareblock.scss';
 import '../../styles/styles/breakpoints-squareblock.scss'
+import {useInView} from "react-intersection-observer";
 
 export default function SquareBlock() {
-
-
+    const { ref, inView, entry } = useInView({
+        /* Optional options */
+        threshold: 0,
+      });
+    
     return (
         <div className="squareblock-wrapper">
-            <div className="square">
-                <p>LUNAR MEANING</p>
+            <div className={`square ${inView ? "square-animation":""}`} ref={ref} >
+                <p>{`LUNAR MEANING`}</p>
             </div>
             <div className="outside-square-text">
                 <p>

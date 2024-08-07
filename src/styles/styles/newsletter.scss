@@ -1,5 +1,24 @@
 @use '../modules/variables';
 
+@keyframes formAppear {
+    from {background-color: variables.$primary-color-c;}
+    to {background-color: variables.$primary-color-d;}
+}
+@keyframes elementsAppear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes button {
+    from {letter-spacing: 0; opacity: 1;}
+    to {letter-spacing: 1px; opacity: 0.8;}
+}
+@keyframes unbutton {
+    from {letter-spacing: 1px; opacity: 0.8;}
+    to {letter-spacing: 0; opacity: 1;}
+}
+
+
+
 .newsletter-wrapper {
     background-color: variables.$primary-color-c;
     height: 400px;
@@ -7,7 +26,7 @@
     h2 {
         margin: auto;
         text-align: center;
-        font-size: 42px;
+        font-size: 64px;
         color: variables.$primary-color-d;
     }
     p{
@@ -26,6 +45,16 @@
             height: 42px;
             font-size: 20px;
             width: 216px;
+            background-color: white;
+            border: 1px solid gray;
+            animation-name: unbutton;
+            animation-duration: 1s;
+        }
+        button:hover {
+            animation-name: button;
+            animation-duration: 1s;
+            letter-spacing: 1px;
+            opacity: 0.8;
         }
     }
 
@@ -33,19 +62,25 @@
         background-color: variables.$primary-color-d;
         width: 70vw;
         max-width: 600px;
-        height: 144px;
+        height: 160px;
         margin: auto;
         margin-top: 20px;
         border: 0px;
         border-radius: 25px;
         padding-top: 24px;
+
+        animation-name: formAppear;
+        animation-duration: 3s;
+
         input {
             width: 70%;
-            height: 24px;
+            height: 32px;
             border: 1px solid darkgray ;
             border-radius: 5px;
             margin: 8px;
             margin-left: 15%;
+            animation-name: elementsAppear;
+            animation-duration: 3s;
         }
         button {
             width: 50%;
@@ -54,7 +89,13 @@
             border-radius: 5px;
             margin: 8px;
             margin-left: 25%;
+            animation-name: elementsAppear;
+            animation-duration: 3s;
 
         }
     }
+    .thanks {
+        font-size: 48px;
+    }
 }
+

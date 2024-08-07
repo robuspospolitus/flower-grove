@@ -31,7 +31,7 @@ export default function Newsletter() {
                     </form>
                 </div>
             }
-            {isSubmitted && <h2>THANK YOU!</h2>}
+            {isSubmitted && <h2 className='thanks'>THANK YOU!</h2>}
         </div>
     );
 }

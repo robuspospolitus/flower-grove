@@ -1,5 +1,11 @@
 @use "../modules/variables";
 
+
+@keyframes squareAppear {
+    from { opacity: 0; transform: translateX(-120px);}
+    to {opacity: 1; transform: translateX(0);}
+}
+
 .squareblock-wrapper {
     position: absolute;
     height: 600px;
@@ -14,6 +20,12 @@
             font-family: fancyFont;
             color: variables.$primary-color-a;
         }
+        
+    }
+    .square-animation {
+        animation-name: squareAppear;
+        animation-duration: 1s;
+        
     }
     .outside-square-text {
         p {

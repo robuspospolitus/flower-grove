@@ -1,5 +1,14 @@
 @use '../modules/variables';
 
+@keyframes hover {
+    from {background-color: black;}
+    to {background-color: variables.$primary-color-a;}
+}
+@keyframes unhover {
+    from {background-color: variables.$primary-color-a;}
+    to {background-color: black;}
+}
+
 .navigation-bar {
     height: 48px;
     display: flex;
@@ -13,12 +22,20 @@
         text-align: center;
         width: 100%;
         line-height: 48px;
+        margin-left: 1px;
+        animation-name: unhover;
+        animation-duration: 1s;
+        
     }
     .navigation-link:link, .navigation-link:visited {
         text-decoration: none;
         color: white;
+        animation-name: unhover;
+        animation-duration: 1s;
     }
     .navigation-link:hover {
+        animation-name: hover;
+        animation-duration: 0.5s;
         background-color: variables.$primary-color-a;
     }
     .separator{
