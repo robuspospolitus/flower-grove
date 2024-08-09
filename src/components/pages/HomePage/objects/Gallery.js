@@ -1,4 +1,4 @@
-import '../../styles/styles/gallery.scss';
+import '../../../../styles/styles/gallery.scss';
 
 const Gallery = () => (
         <>

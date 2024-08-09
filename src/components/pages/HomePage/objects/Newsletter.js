@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../../styles/styles/newsletter.scss';
+import '../../../../styles/styles/newsletter.scss';
 
 export default function Newsletter() {
     const [isFormOpen, setFormOpen] = useState(false);
@@ -9,7 +9,8 @@ export default function Newsletter() {
     const handleNewsletterFormOpen = () => {
         setFormOpen(!isFormOpen);
     }
-    const handleNewsletterSubmit = () => {
+    const handleNewsletterSubmit = (e) => {
+        e.preventDefault();
         setFormOpen(false);
         setSubmitted(true);
     }
@@ -24,7 +25,7 @@ export default function Newsletter() {
             }
             {isFormOpen &&
                 <div className='newsletter-form'>
-                    <form onSubmit={() => handleNewsletterSubmit()}>
+                    <form onSubmit={(e) => handleNewsletterSubmit(e)}>
                         <input type='text' placeholder='Name' value={name} onChange={(e) => setName(e.target.value)}/>
                         <input type='email' placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)}/>
                         <button className='submit-button' type='submit'>Count me in!</button>

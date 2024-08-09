@@ -1,0 +1,68 @@
+@use "../modules/variables";
+
+@keyframes squareAppear {
+    from { opacity: 0.5; transform: translateX(50px);}
+    to {opacity: 1; transform: translateX(0);}
+}
+
+.socialsblock {
+    width: 100%;
+    height: 500px;
+    background-color: variables.$primary-color-d;
+    padding-top: 76px;
+    .socials-wrapper {
+        width: 70%;
+        height: 400px;
+        background-color: white;
+        margin: auto;
+        border: 24px double variables.$primary-color-d;
+        border-top-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+        
+        .inside {
+            width: fit-content;
+            display: flex;
+            margin: auto;
+            h2 {
+                padding: 0; 
+                margin: 0 20px 0 50px;
+                line-height: 400px;
+            }
+            .socials {
+                margin: 50px;
+                margin-top: calc(200px - 160px);
+            }
+        }
+        
+    }
+}
+
+.social {
+    display: flex;
+    margin-top: 24px;
+    .social-image{
+        height: 50px;
+        width: 50px;
+        margin: 0;
+    }
+    .social-name {
+        height: 50px;
+        margin: 0;
+        margin-left: 8px;
+        line-height: 50px;
+        font-size: 24px
+    }
+}
+.social-animation {
+    animation-name: squareAppear;
+    animation-duration: 1s;
+    
+}
+.separator{
+    width: 1px;
+    height: 124px;
+    background-color: black;
+    margin: 0 12px 0 12px;
+    margin-top: calc(200px - 62px);
+    
+}

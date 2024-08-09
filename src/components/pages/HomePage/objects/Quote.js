@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../../styles/styles/quotes.scss'
+import '../../../../styles/styles/quotes.scss'
 
 const quotes = [
     {
