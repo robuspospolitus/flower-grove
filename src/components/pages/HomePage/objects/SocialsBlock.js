@@ -14,10 +14,10 @@ const SocialsBlock = () => {
                     <h2>SOCIALS</h2>
                     <div className='separator'/>
                     <div className="socials">
-                        <SocialSlide socialname={"X"} image={XLogo}/>
-                        <SocialSlide socialname={"Instagram"} image={InstagramLogo}/>
-                        <SocialSlide socialname={"Linkedin"} image={LinkedinLogo}/>
-                        <SocialSlide socialname={"Github"} image={GithubLogo}/>
+                        <SocialSlide socialname={"X"} image={XLogo} page={"https://x.com/robuspospolitus"}/>
+                        <SocialSlide socialname={"Instagram"} image={InstagramLogo} page={"https://www.instagram.com/nadia.gill_/"}/>
+                        <SocialSlide socialname={"Linkedin"} image={LinkedinLogo} page={"/"}/>
+                        <SocialSlide socialname={"Github"} image={GithubLogo} page={"https://github.com/robuspospolitus"}/>
                     </div>
                 </div>
             </div>

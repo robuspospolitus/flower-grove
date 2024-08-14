@@ -1,7 +1,7 @@
 import {useInView} from "react-intersection-observer";
 import "../../../../styles/styles/socialsblock.scss";
 
-export default function SocialSlide({socialname="", image}) {
+export default function SocialSlide({socialname="", image, page="/"}) {
     const { ref, inView, entry } = useInView({
         /* Optional options */
         threshold: 0,
@@ -9,11 +9,11 @@ export default function SocialSlide({socialname="", image}) {
     
     return (
         
-            <div className={`social ${inView ? "social-animation":""}`} ref={ref} >
+            <a href={page} target="blank" className={`social ${inView ? "social-animation":""}`} ref={ref} >
                 <img className="social-image" src={image} alt={socialname}/>
                 <p className="social-name">{socialname}</p>
 
-            </div>
+            </a>
        
     )
 }

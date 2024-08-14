@@ -8,7 +8,7 @@ const Gallery = () => (
                 <img className='img3 gallery'  src="gallery-images/3.jpeg" alt=""/>
                 <img className='img4 gallery'  src="gallery-images/4.jpeg" alt=""/>
                 <div className='gallery-sign'>Welcome</div>
-                <div className='gallery-undersign'>There is in each person, in every animal, bird and plant a star which mirrors, matches or is in some sense the same as a star in the heavens.</div>
+                <div className='gallery-undersign'>Your go-to source for discovering the beauty, science, and care behind every flower. Explore, learn, and grow your floral knowledge with us!</div>
             </div>
             
         </>
