@@ -1,4 +1,4 @@
-import '../../../../styles/styles/purposeblock.scss';
+import '../styles/purposeblock.scss';
 
 
 const PurposeBlock = () => (

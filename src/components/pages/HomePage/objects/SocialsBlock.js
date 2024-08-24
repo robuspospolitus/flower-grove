@@ -1,5 +1,5 @@
 import {useState} from "react";
-import "../../../../styles/styles/socialsblock.scss";
+import "../styles/socialsblock.scss";
 import SocialSlide from "./SocialSlide";
 import GithubLogo from "../../../../socials-logos/github.svg"
 import XLogo from "../../../../socials-logos/X.svg"

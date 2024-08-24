@@ -1,5 +1,5 @@
-import '../../../../styles/styles/squareblock.scss';
-import '../../../../styles/styles/breakpoints-squareblock.scss'
+import '../styles/squareblock.scss';
+import '../styles/breakpoints-squareblock.scss'
 import {useInView} from "react-intersection-observer";
 
 export default function SquareBlock() {

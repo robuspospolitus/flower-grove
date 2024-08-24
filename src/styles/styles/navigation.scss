@@ -16,6 +16,7 @@
     color: white;
     font-family: regularFont;
     letter-spacing: 2px;
+    z-index: 24;
     .navigation-link {
         text-decoration: none;
         font-size: 24px;
@@ -24,22 +25,26 @@
         line-height: 48px;
         margin-left: 1px;
         animation-name: unhover;
+        z-index: 24;
         animation-duration: 1s;
         
     }
     .navigation-link:link, .navigation-link:visited {
         text-decoration: none;
         color: white;
+        z-index: 24;
         animation-name: unhover;
         animation-duration: 1s;
     }
     .navigation-link:hover {
         animation-name: hover;
+         z-index: 24;
         animation-duration: 0.5s;
         background-color: variables.$primary-color-a;
     }
     .separator{
         width: 1px;
+        z-index: 24;
         height: 24px;
         background-color: white;
         margin-top: 12px;

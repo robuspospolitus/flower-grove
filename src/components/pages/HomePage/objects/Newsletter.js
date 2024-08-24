@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../../../../styles/styles/newsletter.scss';
+import '../styles/newsletter.scss';
 
 export default function Newsletter() {
     const [isFormOpen, setFormOpen] = useState(false);

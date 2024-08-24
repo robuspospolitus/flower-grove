@@ -1,0 +1,91 @@
+@use "../../../../styles/modules/variables";
+
+::-webkit-scrollbar {
+    height: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #47240f;
+    border-radius: 20px;
+    
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #522f1c;
+  }
+  
+.posts-page {
+    position: relative;
+    height: calc(100vh - 132px);
+    width: 100vw;
+    background-color: variables.$primary-color-c;
+    margin: 0;
+    p {
+        margin: 0;
+    }
+    .posts-header-text {
+        font-family: fancyFont;
+        font-weight: 600;
+        user-select: none;
+
+    }
+    .covered-text {
+        font-size: 124px;
+        letter-spacing: 2px;
+        color: white;
+        opacity: 0.7;
+        z-index: 1;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        height: 124px;
+
+    }
+    .outlined-text {
+        line-height: 150px;
+        font-size: 124px;
+        letter-spacing: 2px;
+        color: variables.$primary-color-c;
+        filter: drop-shadow(0 0 2px variables.$primary-color-a);
+        
+        z-index: 0;
+    }
+    
+
+
+
+    .posts-block {
+        background-color: variables.$primary-color-d;
+        height: 60%;
+        width: 60%;
+        max-width: 800px;
+        border-top-left-radius: 24px;
+        border-bottom-left-radius: 24px;
+        position: absolute;
+        top: 30%;
+        right: 0;
+    }
+
+    .posts-carousel {
+        width: 100vw;
+        height: 50%;
+        position: absolute;
+        top: 35%;
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .blue {
+        height: 80%;
+        min-width: 800px;
+        margin: 0 24px 0 24px;
+        margin-top: 4vh;
+        background-color: white;
+        border-radius: 20px;
+    }
+}

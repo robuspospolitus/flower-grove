@@ -1,5 +1,5 @@
 import {useInView} from "react-intersection-observer";
-import "../../../../styles/styles/socialsblock.scss";
+import "../styles/socialsblock.scss";
 
 export default function SocialSlide({socialname="", image, page="/"}) {
     const { ref, inView, entry } = useInView({
