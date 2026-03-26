@@ -1,8 +1,13 @@
+import Footer from "../objects/Footer"
 export default function InfoPage() {
 
     return(
         <>
-        Info
+        <div className="page">
+
+            Info
+        </div>
+        <Footer/>
         </>
     )
 }

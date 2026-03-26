@@ -11,6 +11,9 @@
   font-family: regularFont;
   src: url(LaneNarrow.ttf);
 }
+html {
+    width: 100vw;
+}
 * {
   font-family: regularFont;
 }
@@ -26,4 +29,3 @@ h2 {
   margin-right: 13px;
   
 }
-
