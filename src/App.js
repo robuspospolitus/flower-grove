@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navigation from "./components/pages/Navigation";
 import HomePage from "./components/pages/HomePage/HomePage";
 import PostsPage from "./components/pages/PostsPage/PostsPage";
-import InfoPage from "./components/pages/InfoPage";
+import InfoPage from "./components/pages/InfoPage/InfoPage";
 import PrivacyPolicyPage from "./components/pages/PrivacyPolicyPage";
 import TermsAndConditionsPage from "./components/pages/TermsAndConditionsPage";
 import './App.scss';

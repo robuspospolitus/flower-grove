@@ -1,0 +1,55 @@
+@use "../../../styles/modules/variables";
+
+.page {
+    height: calc(100vh - 132px);
+    background-color: variables.$primary-color-a;
+    color: white;
+    text-align: center;
+    padding: 24px;
+    box-sizing: border-box;
+    overflow: hidden;
+    overflow-y: auto;
+    h1 {
+        font-family: fancyFont;
+        letter-spacing: 2px;
+        font-weight: 100;
+        font-size: xxx-large;
+        color: variables.$primary-color-c;
+    }
+    .info {
+        background-color: white;
+        width: 80%;
+        margin: auto;
+        margin-top: 35px;
+        color: variables.$primary-color-a;
+        font-size: large;
+        font-weight: 500;
+        padding: 24px;
+        box-sizing: border-box;
+        text-align: left;
+        border: 10px double variables.$primary-color-a;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        .side-to-side{
+            display: flex;
+            margin-bottom: 24px;
+            width: 100%;
+            h2 {
+                background-color: variables.$primary-color-b;
+                text-align: center;
+                margin: 0 0 0 0;
+                padding: 24px;
+                color: variables.$primary-color-a;
+            }
+            p {
+                padding: 24px;
+                font-size: larger;
+            }
+            .second {
+                background-color: variables.$primary-color-c;
+            }
+        }
+        
+
+    }
+}

@@ -10,34 +10,37 @@
     p {
         margin: 0;
     }
-    .header { height: calc(100vh - 132px); }
-    .posts-header-text {
-        font-family: fancyFont;
-        font-weight: 600;
-        user-select: none;
-
+    .header { 
+        height: calc(100vh - 132px); 
+        max-height: calc(100vh - 132px);
+        overflow: hidden;
+        .posts-header-text {
+            font-family: fancyFont;
+            font-weight: 600;
+            user-select: none;
+        }
+        .covered-text {
+            font-size: 124px;
+            letter-spacing: 2px;
+            color: rgb(0, 0, 0);
+            opacity: 0.5;
+            z-index: 1;
+            position: absolute;
+            top: -10px;
+            left: 0;
+            height: 124px;
+        }
+        .outlined-text {
+            line-height: 150px;
+            font-size: 124px;
+            letter-spacing: 2px;
+            color: variables.$primary-color-c;
+            filter: drop-shadow(0 0 2px variables.$primary-color-a);
+            
+            z-index: 0;
+        }
     }
-    .covered-text {
-        font-size: 124px;
-        letter-spacing: 2px;
-        color: rgb(0, 0, 0);
-        opacity: 0.5;
-        z-index: 1;
-        position: absolute;
-        top: -10px;
-        left: 0;
-        height: 124px;
-
-    }
-    .outlined-text {
-        line-height: 150px;
-        font-size: 124px;
-        letter-spacing: 2px;
-        color: variables.$primary-color-c;
-        filter: drop-shadow(0 0 2px variables.$primary-color-a);
-        
-        z-index: 0;
-    }
+    
     
 
 
