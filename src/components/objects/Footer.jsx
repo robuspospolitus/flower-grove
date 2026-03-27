@@ -1,5 +1,5 @@
 import "../../styles/styles/footer.scss";
-import { Outlet, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 function Footer()  {
