@@ -35,6 +35,7 @@ This project was originally created earlier and later revisited to improve code 
 ## Getting started
 
 ### Website
+The project is also available from [HERE](https://flower-grove.vercel.app/)
 
 ### Installation and setup
 
