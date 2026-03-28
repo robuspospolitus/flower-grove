@@ -10,7 +10,7 @@ export default function InfoPage() {
             <h1>Informations</h1>
             <div className="info">
                 <div className="side-to-side">
-                    <h2>About This Website</h2>
+                    <h2 style={{borderTopLeftRadius: '20px'}}>About This Website</h2>
                     <p>
                         This website was created as a space for exploring the beauty, meaning, and science behind flowers.
                         It combines botanical knowledge with artistic inspiration, offering visitors a place to both learn and feel connected to nature.
