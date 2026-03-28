@@ -10,6 +10,13 @@
     z-index: 3;
     overflow: hidden;
 }
+.modal-home {
+    position: fixed;
+    height: 100vh;
+    .modal-wrapper {
+        margin-top: 32px;
+    }
+}
 .modal-wrapper {
     width: 80%;
     height: 80%;
