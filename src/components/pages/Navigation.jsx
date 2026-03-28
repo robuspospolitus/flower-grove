@@ -10,7 +10,6 @@ const Navigation = () => {
                 <Link className='navigation-link' to="/posts">Posts</Link>
                 <div className='separator'/>
                 <Link className='navigation-link' to="/info">Info</Link>
-                
             </nav>
             <Outlet />
         </>

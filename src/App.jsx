@@ -1,10 +1,11 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Navigation from "./components/pages/Navigation";
 import HomePage from "./components/pages/HomePage/HomePage";
 import PostsPage from "./components/pages/PostsPage/PostsPage";
 import InfoPage from "./components/pages/InfoPage/InfoPage";
-import PrivacyPolicyPage from "./components/pages/PrivacyPolicyPage";
-import TermsAndConditionsPage from "./components/pages/TermsAndConditionsPage";
+import GithubLogo from './socials-logos/GitHubLogo'
+import XLogo from "./socials-logos/XLogo";
+import LinkedinLogo from "./socials-logos/LinkedinLogo";
 import './App.scss';
 import './styles/styles/logo.scss';
 import './styles/styles/breakpoints-logo-purpose.scss'
@@ -14,15 +15,15 @@ function App() {
     <div className="App">
       <div className="logo-wrapper">
         <div className="logo-text">Flower Grove</div>
-        <div className="socials">
-          <a href="/" target="blank">
-            <div className="social"/>
+        <div className="nav-socials">
+          <a href="https://x.com/robuspospolitus" target="_blank">
+            <XLogo />
           </a>
-          <a href="/" target="blank">
-            <div className="social"/>
+          <a href="/" target="_blank">
+            <LinkedinLogo />
           </a>
-          <a href="/" target="blank">
-            <div className="social"/>
+          <a href="https://github.com/robuspospolitus" target="_blank">
+            <GithubLogo />
           </a>
         </div>
       </div>
@@ -32,8 +33,6 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="posts" element={<PostsPage />} />
           <Route path="info" element={<InfoPage />} />
-          <Route path="privacy-policy" element={<PrivacyPolicyPage />} />
-          <Route path="terms-and-conditions" element={<TermsAndConditionsPage />} />
           <Route path="*" element={<>404</>} />
         </Route>
       </Routes>
