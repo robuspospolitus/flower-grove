@@ -121,7 +121,7 @@ const data = [
             "Continued use of the website after changes indicates acceptance of the updated policy.",
 
             "10. Contact",
-            "For questions about this Privacy Policy or your personal data, you may contact the website owner using the contact information provided on the website."
+            "For questions about this Privacy Policy or your personal data, you may contact the website owner using email: nadia.gill2006@gmail.com"
         ]
     },
 ]

@@ -5,16 +5,14 @@
     to {opacity: 1; transform: translateX(0);}
 }
 
-
-
 .socialsblock {
     width: 100%;
-    height: 500px;
     background-color: variables.$primary-color-d;
     padding-top: 76px;
+    padding-bottom: 76px;
     .socials-wrapper {
         width: 70%;
-        height: 400px;
+        min-height: 400px;
         background-color: white;
         margin: auto;
         border: 24px double variables.$primary-color-d;
@@ -69,7 +67,6 @@ a {
 .social-animation {
     animation-name: squareAppear;
     animation-duration: 1s;
-    
 }
 .separator{
     width: 1px;
@@ -77,5 +74,29 @@ a {
     background-color: black;
     margin: 0 12px 0 12px;
     margin-top: calc(200px - 62px);
-    
+}
+
+@media screen and (max-width: 870px){
+    .inside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100% !important;
+        h2 {
+            line-height: 100px !important;
+            text-align: center;
+            margin: 0 !important;
+        }
+        .separator {
+            height: 1px;
+            width: 100%;
+            margin-top: 0;
+        }
+        .socials {
+            margin-bottom: 16px !important;
+            a {
+                margin: 0 0 24px 0;
+            }
+        }
+    }
 }

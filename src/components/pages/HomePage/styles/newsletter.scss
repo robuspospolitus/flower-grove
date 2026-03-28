@@ -17,11 +17,9 @@
     to {letter-spacing: 0; opacity: 1;}
 }
 
-
-
 .newsletter-wrapper {
     background-color: variables.$primary-color-c;
-    height: 400px;
+    min-height: 400px;
     padding: 50px;
     h2 {
         margin: auto;
