@@ -19,7 +19,7 @@ function App() {
           <a href="https://x.com/robuspospolitus" target="_blank">
             <XLogo />
           </a>
-          <a href="/" target="_blank">
+          <a href="https://www.linkedin.com/in/nadia-karolina-gill-3a81a3331/" target="_blank">
             <LinkedinLogo />
           </a>
           <a href="https://github.com/robuspospolitus" target="_blank">

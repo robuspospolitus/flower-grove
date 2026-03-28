@@ -16,7 +16,7 @@ const SocialsBlock = () => {
                     <div className="socials">
                         <SocialSlide socialname={"X"} image={XLogo} page={"https://x.com/robuspospolitus"}/>
                         <SocialSlide socialname={"Instagram"} image={InstagramLogo} page={"https://www.instagram.com/nadia.gill_/"}/>
-                        <SocialSlide socialname={"Linkedin"} image={LinkedinLogo} page={"/"}/>
+                        <SocialSlide socialname={"Linkedin"} image={LinkedinLogo} page={"https://www.linkedin.com/in/nadia-karolina-gill-3a81a3331/"}/>
                         <SocialSlide socialname={"Github"} image={GithubLogo} page={"https://github.com/robuspospolitus"}/>
                     </div>
                 </div>
